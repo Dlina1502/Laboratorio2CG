@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+    <script src="JS/proyectil.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Lanzamiento de proyectil</title>
+</head>
+
+<body>
+    <canvas id="screen" onclick="borrar()"><span style="color: red">Elemento <b>canvas</b> no soportado.</span></canvas>
+    <div class="container formulario">
+        <div class="w-100 Nombres">
+            <ul>
+                <li>Esteban Lopez Mazuera</li>
+                <li>Lina Duque Becerra</li>
+                <li>Milton Lenis</li>
+            </ul>
+        </div>
+        <form name="formulario">
+            <div id="tiempo">
+                Coordenada X1: <input name="cx1" type="text" value="" size="1" /> Coordenada Y1: <input name="cy1"
+                    type="text" value="" size="1" />
+                <br>
+                Coordenada X2: <input name="cx2" type="text" value="" size="1" /> Coordenada Y2: <input name="cy2"
+                    type="text" value="" size="1" />
+                <br>
+                <input type="button" value="Dibujar" onclick="asignarCoordenadas(0)" class="boton" />
+                <input type="button" value="Basic line algorithm" onclick="asignarCoordenadas(1)" class="boton" />
+                <input type="button" value="DDA" onclick="asignarCoordenadas(2)" class="boton" />
+                <input type="button" value="Bresenham Line" onclick="asignarCoordenadas(3)" class="boton" />
+                <input type="button" value="Reset" onclick="reset()" class="boton" />
+            </div>
+            <div>
+                <br>
+                Ingrese el centro de la circunferencia:
+                <br>
+                Coordenada X: <input name="xc" type="text" value="" size="1" /> Coordenada Y: <input name="yc"
+                    type="text" value="" size="1" />
+                <br>
+                Radio: <input name="rc" type="text" value="" size="1" />
+                <br>
+                <input type="button" value="Punto Medio" onclick="asignarDatosCirculo(0)" class="boton" />
+                <input type="button" value="Bresenham circle" onclick="asignarDatosCirculo(1)" class="boton" />
+            </div>
+
+
+        </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

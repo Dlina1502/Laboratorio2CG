@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+#proyectil{
+    position: relative;
+    top: 200px;
+}
+
+#screen{
+    width: 800px;
+    height: 800px;
+    border:double;
+    border-color:#000;
+    background-position: top right;
+    background-repeat:no-repeat; 
+}
+
+.container{
+    max-width: 1200px;
+    width: 50%;
+    margin: 100px auto;
+}
+
+.w-100{
+    width: 50%;
+}
+#velocidad_inicial{
+    float: right;
+}
+
+.nombres{
+    overflow: hidden;
+    float: left;
+    width: 500px;
+    height: 100px;
+}
+
+.container-list >ul{
+    list-style-type: none;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-list >ul >li{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    
+}
